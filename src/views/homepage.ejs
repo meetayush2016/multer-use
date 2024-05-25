@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+                    body {
+                        display: flex;
+                        flex-direction: column;
+  background-color: black;
+  color: aliceblue;
+  
+  font-family: sans-serif; display: flex; /* Center content vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Set minimum height for full viewport */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-button { /* Apply class to button for styling */
+  background-color: #ffd700; /* Darker shade of yellow */
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Set cursor to default */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.upload-button:hover {
+  background-color: #ffc107; /* Lighter yellow on hover */
+  box-shadow: 0 0 5px 2px rgba(255, 215, 0, 0.5); /* Increase shadow on hover */
+}
+
+.upload-button:active { /* Style for button press */
+  transform: translateY(2px); /* Slight downward movement on press */
+  box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); /* Remove shadow on press */
+}
+
+#profileimage {
+  display: none; /* Hide the actual file input visually */
+}
+
+label[for="profileimage"] { /* Create a custom label for the file input */
+  padding: 10px 20px;
+  border: 1px solid #ffd700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+label[for="profileimage"]:hover {
+  background-color: #ffd700; /* Light yellow background on hover */
+  color: black;
+
+}
+#upload_button{
+    background-color: #ffd700; /* Darker shade of yellow */
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Set cursor to default */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.2); /* Subtle shadow for depth */
+  margin-top: 40px;
+
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>UPLOAD FILE</h1>
+    <form action="/profile" method="post" enctype="multipart/form-data">
+        <input type="file" name="avatar" />
+        <button id="upload_button" type="submit">Upload</button>
+    </form>
+    <div>
+        
+    </div>
+    
+    
+</body>
+</html>
